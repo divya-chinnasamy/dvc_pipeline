@@ -1,0 +1,28 @@
+{   
+    "logistic_reg_classification":{
+      "Topic" : "Supervised Machine Learning",
+      "sub_topic":"Classification",
+      "Algorithm" : "Logistic Regression",
+      "IV":["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare"],
+      "DV":["Survived"],
+      "input_file":"D:/Divya/Projects/MLOPS/dvc_pipeline/data/Titanic_disaster.csv",
+      "output_path":"D:/Divya/Projects/MLOPS/dvc_pipeline/model/",
+      "model_name":"log_reg_cls_model",
+      "model_generation":"Yes",
+      "penalty":"l2",
+      "dual":"True",
+      "tol":"0.001",
+      "C":"1.0",
+      "fit_intercept":"True",
+      "intercept_scaling":"1.0",
+      "class_weight":"None",
+      "random_state":"None",
+      "solver":"liblinear",
+      "max_iter":"100",
+      "multi_class":"auto",
+      "verbose" :"0",
+      "warm_start":"False",
+      "n_jobs":"None",
+      "l1_ratio":"None"
+    }
+}

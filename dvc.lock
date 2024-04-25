@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  logistic_regression:
+    cmd: python src/logistic_regression.py data/titanic_disaster.csv model/
+    deps:
+    - path: data/titanic_disaster.csv
+      hash: md5
+      md5: 52ae796657c8e342be22ea65758a1426
+      size: 45808
+    - path: src/conf.json
+      hash: md5
+      md5: 060487df5a1dfefe9f453588dc40ebfa
+      size: 892
+    - path: src/logistic_regression.py
+      hash: md5
+      md5: 49b39aa56c81a4202069b17557127ee9
+      size: 11305
+    outs:
+    - path: model/
+      hash: md5
+      md5: 0b02d27f3fd67b00b84c21418783f2aa.dir
+      size: 1282
+      nfiles: 1

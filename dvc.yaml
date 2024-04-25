@@ -1,0 +1,9 @@
+stages:
+  logistic_regression:
+    cmd: python src/logistic_regression.py data/titanic_disaster.csv model/
+    deps:
+    - data/titanic_disaster.csv
+    - src/conf.json
+    - src/logistic_regression.py
+    outs:
+    - model/
